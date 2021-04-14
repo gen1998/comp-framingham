@@ -1,0 +1,74 @@
+{
+    "features": [
+        "category",
+        "continuous",
+        "additional"
+    ],
+    "base_models":{
+        "Lightgbm": {
+            "objective": "binary",
+            "metric" : "auc",
+            "lambda_l1" : 0.0021235263737723726,
+            "lambda_l2": 1.0730966148874343e-05,
+            "num_leaves": 163,
+            "feature_fraction": 0.6066860665620571,
+            "bagging_fraction": 0.5177736127439118,
+            "bagging_freq": 4,
+            "min_child_samples": 78,
+            "learning_rate" : 0.01
+        },
+        "Xgboost":{
+            "random_state" : 42,
+            "learning_rate" : 0.01,
+            "max_depth" : 8,
+            "colsample_bytree":0.6802395595700612
+        },
+        "Enet":{
+            "alpha" : 0.000017195099616559966,
+            "l1_ratio" : 0.9362202857884212
+        },
+        "Lasso":{
+            "alpha" : 0.00012904191092543639
+        },
+        "RandomForest":{
+            "criterion" : "mse",
+            "n_estimators" : 100,
+            "max_depth" : 79,
+            "max_features" : "auto",
+            "min_samples_split" : 0.0001736360866674799,
+            "min_samples_leaf" : 2
+        },
+        "SVR":{
+            "kernel" : "poly",
+            "degree" : 2,
+            "coef0" : 0.03647760896839892,
+    		"C" : 89.39736064708465,
+		    "epsilon" : 0.0008838857497946874
+        },
+        "GBR":{
+            "learning_rate" : 0.2101777426397746,
+            "max_features" : "sqrt",
+            "loss" : "ls",
+            "n_estimators" : 2049,
+            "max_depth" : 3,
+            "min_samples_leaf" : 1,
+            "min_samples_split" : 0.001194930155491018
+        },
+        "CatBoost":{
+            "learning_rate" : 0.05,
+            "iterations" : 2500, 
+            "od_type": "Iter",
+            "od_wait" :100,
+            "depth" : 9,
+            "l2_leaf_reg":8.179665836714845,
+            "random_strength":0.030676502292772304,
+            "verbose" : 0
+        },
+        "Ridge":{
+            "alpha" : 24.51430581332788
+        }
+    },
+    "loss": "multi_logloss",
+    "target_name": "TenYearCHD",
+    "ID_name": "Id"
+}

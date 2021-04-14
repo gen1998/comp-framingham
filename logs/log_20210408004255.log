@@ -1,0 +1,7 @@
+DEBUG:root:./logs/log_20210408004255.log
+DEBUG:root:['default']
+DEBUG:root:(4240, 16)
+DEBUG:root:Index(['Unnamed: 0', 'male', 'age', 'education', 'currentSmoker', 'cigsPerDay',
+       'BPMeds', 'prevalentStroke', 'prevalentHyp', 'diabetes', 'totChol',
+       'sysBP', 'diaBP', 'BMI', 'heartRate', 'glucose'],
+      dtype='object')

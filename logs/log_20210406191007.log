@@ -1,0 +1,8 @@
+DEBUG:root:./logs/log_20210406191007.log
+DEBUG:root:['default']
+DEBUG:root:(3180, 15)
+DEBUG:root:Index(['male', 'age', 'education', 'currentSmoker', 'cigsPerDay', 'BPMeds',
+       'prevalentStroke', 'prevalentHyp', 'diabetes', 'totChol', 'sysBP',
+       'diaBP', 'BMI', 'heartRate', 'glucose'],
+      dtype='object')
+DEBUG:root:Lightgbm, score: 0.7052 (0.0231)
